@@ -1,0 +1,267 @@
+.mt-15{
+	margin-top: 15px;
+}
+.text-center {
+	text-align: center;
+}
+.style-h1 {
+	font-size: 7rem;
+	font-weight: 400;
+}
+.separador {
+	width: 250px;
+	border: 1px solid gray;
+	text-align: center;
+}
+.style-p {
+	font-size: 1.1em;
+    font-weight: 300;
+}
+header {
+	.navbar-fixed-top {
+		background-color: #27AD60;
+		padding: 20px 0;
+    }
+	.navbar-collapse {
+		border:none;
+	}
+	.navbar-default .navbar-nav li a {
+		font-weight: 300;
+        font-size: 15px;
+        color: white;
+
+        &:hover {
+        	color: white;
+        	background-color: gray;
+        	border-radius: 50px;
+        }
+	}
+}
+.banner {
+	background-image: url(../img/carousel-bg.jpg);
+	background-size: cover;
+	background-position-y: -65%;
+	height: 550px;
+	@extend .text-center;
+	color: white;
+	padding-top: 11%;
+
+
+	h1 {
+		@extend .style-h1;
+	}
+	h2 {
+		font-weight: 400;
+		margin-top: 30px;
+	}
+
+}
+@mixin color {
+	height: 150px;
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+.palette {
+
+	@extend .text-center;
+
+    hr {
+    	@extend .separador;
+    	margin-bottom: 70px;
+    }
+    h1 {
+    	@extend .style-h1;
+    	margin-top: 60px;
+    }
+    /* ROW-1-PALETA */
+    .box-color {
+    	@include color;
+    	background-color: #69D2E7;
+    }
+    .box-color-2{
+    	@include color;
+    	background-color: #A7DBDB;
+    }
+    .box-color-3{
+    	@include color;
+    	background-color: #E0E4CC;
+    }
+    .box-color-4{
+    	@include color;
+    	background-color: #F38639;
+    }
+    .box-color-5{
+    	@include color;
+    	background-color: #FA6900;
+    }
+    /* ROW-2-PALETA */
+    .box-color-6{
+    	@include color;
+    	background-color: #E94C6F;
+    }
+    .box-color-7{
+    	@include color;
+    	background-color: #542733;
+    }
+    .box-color-8{
+    	@include color;
+    	background-color: #5A6A62;
+    }
+    .box-color-9{
+    	@include color;
+    	background-color: #C6D5CD;
+    }
+    .box-color-10{
+    	@include color;
+    	background-color: #FDF200;
+    }
+    /* ROW-3-PALETA */
+    .box-color-11{
+    	@include color;
+    	background-color: #DB3340;
+    }
+    .box-color-12{
+    	@include color;
+    	background-color: #E8B71A;
+    }
+    .box-color-13{
+    	@include color;
+    	background-color: #F7EAC8;
+    }
+    .box-color-14{
+    	@include color;
+    	background-color: #1FDA9A;
+    }
+    .box-color-15{
+    	@include color;
+    	background-color: #28ABE3;
+    }
+    /* ROW-4-PALETA */
+    .box-color-16{
+    	@include color;
+    	background-color: #588C73;
+    }
+    .box-color-17{
+    	@include color;
+    	background-color: #F2E394;
+    }
+    .box-color-18{
+    	@include color;
+    	background-color: #F2AE72;
+    }
+    .box-color-19{
+    	@include color;
+    	background-color: #D96459;
+    }
+    .box-color-20{
+    	@include color;
+    	background-color: #8C4646;
+    }
+    /* ROW-5-PALETA */
+    .box-color-21{
+    	@include color;
+    	background-color: #D0C91F;
+    }
+    .box-color-22{
+    	@include color;
+    	background-color: #85C4B9;
+    }
+    .box-color-23{
+    	@include color;
+    	background-color: #008BBA;
+    }
+    .box-color-24{
+    	@include color;
+    	background-color: #DF514C;
+    }
+    .box-color-25{
+    	@include color;
+    	background-color: #DC403B;
+    }
+
+}
+.about-us {
+	background-color: #2C3E50;
+	@extend .text-center;
+	padding: 100px 0;
+	color: white;
+
+	h1 {
+		@extend .style-h1;
+	}
+	hr {
+		@extend .separador;
+		border-color: #DFE0E2;
+		margin-bottom: 70px;
+	}
+	p {
+		
+        text-align: left;
+        @extend .style-p
+	}
+	.about-text {
+
+        padding: 0 0 0 70px;
+    }
+    img {
+			width: 80%;
+	}
+
+}
+.tips-design {
+	background-color: #27AD60;
+	padding: 100px 0;
+	@extend .text-center;
+	color: white;
+
+	h1 {
+		@extend .style-h1;
+	}
+	hr {
+		@extend .separador;
+		border-color: #DFE0E2;
+	}
+	p {
+		@extend .style-p;
+	}
+}
+.team {
+	background-color: #27AD60;
+	padding: 100px 0;
+	@extend .text-center;
+	color: white;
+
+	h1 {
+		@extend .style-h1;
+		font-weight: 400;
+	}
+	hr {
+		@extend .separador;
+		border-color: #DFE0E2;
+	}
+	p {
+		@extend .style-p;
+	}
+	.team-img {
+
+		padding: 80px 35px 50px;
+
+		h2 {
+			color: white;
+		    font-weight: 300;
+		}
+
+		hr {
+			@extend .separador;
+			border: 1px dashed #93988B;
+		}
+		p {
+			color: silver;
+			&:first-child {
+                color: #3C594A;
+			}
+		}
+	}
+}
